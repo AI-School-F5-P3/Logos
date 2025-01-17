@@ -125,3 +125,7 @@ cython_debug/
 
 #Others
 distractor_images
+dataset
+data
+raw_images
+models
