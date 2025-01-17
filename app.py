@@ -11,7 +11,7 @@ st.set_page_config(page_title="Detector de Logos Coca-Cola", layout="wide")
 # Cargar el modelo
 @st.cache_resource
 def load_model():
-    return YOLO('models/logo_detection/weights/best.pt')
+    return YOLO('models/yolov8n.pt')
 
 model = load_model()
 
@@ -50,7 +50,7 @@ def detect_logo(image):
     return Image.fromarray(image), results
 
 # Interfaz de usuario
-st.title('Detector de Logos Coca-Cola')
+st.title('Detección de Logos Coca-Cola')
 st.write('Esta aplicación detecta logos de Coca-Cola en imágenes.')
 
 # Upload de imagen
