@@ -11,8 +11,8 @@ Este proyecto tiene como objetivo entrenar un modelo de detección de objetos qu
 ### Nivel Medio (Completado):
 - Extender la funcionalidad del modelo para procesar videos.
 - Mostrar debajo de cada detección el nombre de la marca detectada.
-- 
-###**Nivel Avanzado (Completado):**
+
+### Nivel Avanzado (Completado):
   - Añadir el porcentaje de confianza en las detecciones.
   - Almacenar las detecciones en una base de datos con información relevante (nombre del video, bounding boxes, etc.).
   - Crear una interfaz web para cargar videos y visualizar resultados.
@@ -98,5 +98,3 @@ Las contribuciones al proyecto son bienvenidas. Sigue estos pasos:
    git commit -m "Añade nueva funcionalidad"
    ```
 4. Envía un pull request.
-
-
