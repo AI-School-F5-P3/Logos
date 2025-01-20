@@ -8,24 +8,27 @@ Este proyecto tiene como objetivo entrenar un modelo de detección de objetos qu
 ### Nivel Esencial (Completado):
 - Entrenar un modelo que detecte una nueva categoría (marca) y localice su posición dentro de un bounding box en imágenes.
 
-### Nivel Medio (En Progreso):
+### Nivel Medio:
 - Extender la funcionalidad del modelo para procesar videos.
 - Mostrar debajo de cada detección el nombre de la marca detectada.
-
-### Niveles Futuros (Planeado):
-- **Nivel Avanzado:**
+- 
+###**Nivel Avanzado:**
   - Añadir el porcentaje de confianza en las detecciones.
   - Almacenar las detecciones en una base de datos con información relevante (nombre del video, bounding boxes, etc.).
-  - Detectar múltiples marcas en el mismo video.
-- **Nivel Experto:**
   - Crear una interfaz web para cargar videos y visualizar resultados.
+  
+
+### Niveles Futuros (Planeado):
+
+- **Nivel Experto:**
+  - Detectar múltiples marcas en el mismo video.
   - Implementar un servicio en la nube con una API para acceder al modelo.
 
 ## Tecnologías Utilizadas
 El proyecto emplea las siguientes tecnologías:
 
 - **Modelos de Detección de Objetos:** YOLOv8n.
-- **Frameworks de Deep Learning:** TensorFlow, PyTorch, TensorFlow/Keras.
+- **Frameworks de Deep Learning:** streamlit, TensorFlow, PyTorch, TensorFlow/Keras.
 - **Librerías Complementarias:** OpenCV, scikit-image, Pillow.
 
 ## Metodología de Trabajo
@@ -64,7 +67,7 @@ proyecto-cv-deteccion-objetos/
 ## Instrucciones para Ejecutar el Proyecto
 1. Clona este repositorio:
    ```bash
-   git clone <URL_DEL_REPOSITORIO>
+   git clone https://github.com/AI-School-F5-P3/Logos.git
    ```
 2. Instala las dependencias:
    ```bash
@@ -80,7 +83,7 @@ proyecto-cv-deteccion-objetos/
    ```
 5. Analiza videos:
    ```bash
-   python scripts/video_analysis.py --video_path data/test_video.mp4
+   python scripts/streamlit run app_video.py 
    ```
 
 ## Contribuciones
@@ -96,7 +99,4 @@ Las contribuciones al proyecto son bienvenidas. Sigue estos pasos:
    ```
 4. Envía un pull request.
 
-## Contacto
-Para cualquier duda o sugerencia, puedes contactarnos en:
-- Correo: soporte@proyectocv.com
-- GitHub: [Enlace al repositorio](<URL_DEL_REPOSITORIO>)
+
