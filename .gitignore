@@ -126,7 +126,6 @@ cython_debug/
 #Others
 distractor_images
 dataset
-data
 raw_images
 models/best_v3.pt
 models/yolov8n_v1.pt
