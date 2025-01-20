@@ -74,6 +74,12 @@ def detect_logo_in_video(video_path):
 
         total_logo_count += frame_logo_count
 
+        # Guardar cada detección en la base de datos
+        if frame_logo_count > 0:
+            cursor.execute('INSERT INTO detections (timestamp, logo_count, duration) VALUES (?, ?, ?)',
+                           (time.strftime('%Y-%m-%d %H:%M:%S'), frame_logo_count, 0))
+            conn.commit()
+
         # Convertir el fotograma de BGR a RGB para mostrar en Streamlit
         rgb_frame = cv2.cvtColor(frame, cv2.COLOR_BGR2RGB)
         stframe.image(rgb_frame, channels="RGB", use_container_width=True)
@@ -83,7 +89,7 @@ def detect_logo_in_video(video_path):
     # Calcular el tiempo total transcurrido
     total_duration = time.time() - start_time
 
-    # Guardar los resultados en la base de datos
+    # Guardar los resultados totales en la base de datos
     cursor.execute('INSERT INTO detections (timestamp, logo_count, duration) VALUES (?, ?, ?)',
                    (time.strftime('%Y-%m-%d %H:%M:%S'), total_logo_count, total_duration))
     conn.commit()
