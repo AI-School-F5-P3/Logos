@@ -128,9 +128,11 @@ distractor_images
 dataset
 data
 raw_images
-models
+models/best_v3.pt
+models/yolov8n_v1.pt
+models/yolov8n.pt
 roboflow_images
-Computer_Vision_Project_v1i_yolov8_v2
-Computer_Vision_Project_v2i_yolov8_v3
-validation_images
+data/Computer_Vision_Project_v1i_yolov8_v2
+data/Computer_Vision_Project_v2i_yolov8_v3
+
 
