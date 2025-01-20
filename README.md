@@ -8,7 +8,7 @@ Este proyecto tiene como objetivo entrenar un modelo de detección de objetos qu
 ### Nivel Esencial (Completado):
 - Entrenar un modelo que detecte una nueva categoría (marca) y localice su posición dentro de un bounding box en imágenes.
 
-### Nivel Medio (En Progreso):
+### Nivel Medio (Completado):
 - Extender la funcionalidad del modelo para procesar videos.
 - Mostrar debajo de cada detección el nombre de la marca detectada.
 
