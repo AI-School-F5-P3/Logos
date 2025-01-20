@@ -11,7 +11,7 @@ st.set_page_config(page_title="Detector de Logos Coca-Cola", layout="wide")
 # Cargar el modelo
 @st.cache_resource
 def load_model():
-    return YOLO('models/yolov8n.pt')
+    return YOLO('models/best_v2.pt')
 
 model = load_model()
 

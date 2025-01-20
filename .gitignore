@@ -130,4 +130,7 @@ data
 raw_images
 models
 roboflow_images
-Computer_Vision_Project_v1i_yolov8
+Computer_Vision_Project_v1i_yolov8_v2
+Computer_Vision_Project_v2i_yolov8_v3
+validation_images
+
